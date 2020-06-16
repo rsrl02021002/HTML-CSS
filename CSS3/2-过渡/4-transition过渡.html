@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        border: 1px dotted black;
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transition: width 1s ease 1s;  /*transition写在这里，鼠标移入移出都生效*/  /*第四个时间表示延时1s生效*/
+    }
+    #div2:hover{  /*transition放在这里 仅在鼠标悬浮时生效*/
+        width: 400px;
+        /*transition: width 1s ease;*/ /*要过渡的属性  过渡时间  过度方式*/
+        /*transition-property: width;*/  /*all 监听所有变化的属性*/
+        /*transition-duration: 1s;*/
+        /*transition-timing-function: ease;*/
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
