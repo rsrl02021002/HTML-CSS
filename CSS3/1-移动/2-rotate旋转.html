@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        border: 1px dotted black;
+        margin: 100px auto;  /*上外边距100px 水平居中*/
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        transform: rotate(45deg);  /*顺时针旋转45度；*/
+        transform-origin: 0 0;  /*可选  旋转点在原位置的左上角*/
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
