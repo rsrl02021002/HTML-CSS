@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 200px;
+        height: 200px;
+        border: 1px dotted black;
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        /* animation: func 1s ease; */
+        animation-name: func;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+        animation-fill-mode: forwards; /*设置动画状态 forwards设置动画结束时状态为结束时的状态 backwards为开始时状态*/
+        animation-iteration-count: infinite;  /*动画循环次数  2 循环2次  infinite无限次*/
+    }
+    @keyframes func{ /*控制帧数*/
+        from{
+            width: 200px;
+        }
+        to{
+            width: 400px;
+        }
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="div2"></div>
+    </div>
+</body>
+</html>
