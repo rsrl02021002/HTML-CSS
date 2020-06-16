@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        width: 400px;
+        height: 400px;
+        border: 1px dotted black;
+        position: relative;        
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        top: 50%;  /*相对于父元素*/
+        left: 50%;
+        transform: translate(-50%,-50%);  /*相对于自身*/
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="div2">
+            水平垂直居中 高宽未知
+        </div>
+    </div>
+</body>
+</html>
