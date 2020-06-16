@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #div1{
+        width: 400px;
+        height: 400px;
+        border: 1px solid black;
+        position: relative;
+    }
+    #div2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-top:-100px;
+        margin-left:-100px;
+    }
+</style>
+<body>
+    <div id="div1">
+        <div id="div2">
+            <p>父元素设置定位relative</p>
+            <p>子元素设置定位position</p>
+            <p>子元素top:50%,left:50%,margin-top:负子元素高度一半，margin-left:负子元素宽度一半</p>
+        </div>
+    </div>
+</body>
+</html>
